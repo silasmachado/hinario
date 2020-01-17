@@ -1,0 +1,93 @@
+﻿/*ESTILO DO CORPO*/
+body {
+	background-color: #004E52;
+	background-image: url("../images/logo-azul-escuro.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	font-family: verdana;
+	color: white;
+	text-align: center;
+}
+
+/*ESTILO DOS LINKS*/
+a {
+  color: white;
+  text-decoration: none;
+}
+
+/*ESTILO DOS CABEÇALHOS 1*/
+h1 {
+	margin-top: 1.3em;
+}
+
+/*ESTILO DOS PARÁGRAFOS*/
+p {
+	font-size: 20px;
+}
+
+/*ESTILOS DOS ITENS DE LISTA*/
+li {
+	list-style-type: none;
+}
+
+/*ESTILO DOS ITENS DE LISTA DO MENU*/
+li.menu {
+	margin: 15px;
+}
+
+/*ESTILO DA DIV DOS CDs*/
+.tabela-cds {
+	margin-bottom: 1.5em;		
+}
+
+/*ESTILO DO MENU*/
+#menu {
+	position: fixed;
+	left: 0;
+	top: 30%;
+	width: 13em;
+	margin-top: -2.5em;
+	margin-left: -26px;
+	padding-left: 15px;
+	border-style: solid;
+	border-left: none;
+	border-radius: 20px;
+	background-color: rgb(255,255,255,0.6);
+}
+
+/*ESTILO DAS RÉGUAS DO CORPO*/
+hr.body {
+	background-color: white;
+	color: white;
+	height: 1px;
+	float: center;
+	width: 65%;
+}
+
+/*ESTILO DA RÉGUA DO MENU*/
+hr.menu {
+	margin: 1em;
+}
+
+/*ESTILO DAS DIVS DE CADA LETRA*/
+.oculta-letra {
+	display:none;
+}
+
+/*ESTILO DAS LETRAS QUE NÃO EXISTEM*/
+.nao_existe {
+	color: gray;
+}
+
+p.letra {
+	font-weight: bold;
+}
+
+/*
+embed {
+	width:65%;
+	height:100%;
+	position:relative;
+}*/

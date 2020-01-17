@@ -1,0 +1,68 @@
+﻿
+body {
+	background-color: #004E52;
+	background-image: url("images/logo-azul-escuro.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	font-family: verdana;
+	color: white;
+	text-align: center;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+h1 {
+	margin-top: 1.3em;
+}
+
+p {
+	font-size: 20px;
+}
+
+li {
+	list-style-type: none;
+}
+
+li.menu {
+	margin: 15px;
+}
+
+.tabela-cds {
+	margin-bottom: 1.5em;
+		
+}
+
+#menu {
+	position: fixed;
+	left: 0;
+	top: 30%;
+	width: 13em;
+	margin-top: -2.5em;
+	margin-left: -26px;
+	padding-left: 15px;
+	border-style: solid;
+	border-left: none;
+	border-radius: 20px;
+	background-color: rgb(255,255,255,0.6);
+}
+
+hr.body {
+	background-color: white;
+	color: white;
+	height: 1px;
+	float: center;
+	width: 65%;
+}
+
+hr.menu {
+	margin: 1em;
+}
+
+.por-letra {
+	display:none;
+}

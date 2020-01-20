@@ -82,7 +82,18 @@ hr.menu {
 }
 
 p.letra {
-	font-weight: bold;
+	display:none;
+	font-style: italic;
+}
+
+/*CLASSE SEPARADOR*/
+.separador {
+	display:none;
+}
+
+/*ID SEPARADOR*/
+#separador {
+	margin-top: 2.5em;
 }
 
 /*

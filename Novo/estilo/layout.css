@@ -96,6 +96,11 @@ p.letra {
 	margin-top: 2.5em;
 }
 
+/*ESTILO DAS DIVS DE CADA HINARIO*/
+.oculta-hinario {
+	display:none;
+}
+
 /*
 embed {
 	width:65%;

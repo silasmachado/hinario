@@ -1,18 +1,25 @@
 /*EXIBE A DIV DE UMA LETRA*/
 function exibeLetra(letra) {
-	removeTodasAsLetras();
+	ocultaLetrasEHinarios();
 	document.getElementById(letra).style.display = "block";
 	visibilidadeElementoPorClasse('separador',true);
 	visibilidadeElementoPorClasse('paragrafo-letra',true);
 	defineLetra(letra);
 }
 
-/*OCULTA TODAS AS LETRAS ANTES DE EXIBIR ALGUMA*/
-function removeTodasAsLetras() {
-	var elementos = document.getElementsByClassName('oculta-letra');
+/*OCULTA TODAS AS LETRAS */
+function ocultaLetrasEHinarios() {
+	
+	var hinarios = document.getElementsByClassName('oculta-hinario');
 		
-	for(i = 0; i < elementos.length; i++) {
-		elementos[i].style.display = "none";
+	for(i = 0; i < hinarios.length; i++) {
+		hinarios[i].style.display = "none";
+	}
+	
+	var letras = document.getElementsByClassName('oculta-letra');
+		
+	for(i = 0; i < letras.length; i++) {
+		letras[i].style.display = "none";
 	}
 	
 	visibilidadeElementoPorClasse('separador',false);
@@ -39,4 +46,10 @@ function defineLetra (letra){
 	var lastChar = letra[letra.length -1];
 	document.getElementById('paragrafo-letra').innerHTML = "LETRA " + lastChar;
 }
-/**/
+
+/*EXIBE A DIV DE UM HINÁRIO*/
+function exibeHinario(hinario) {
+	ocultaLetrasEHinarios();
+	document.getElementById(hinario).style.display = "block";
+	// document.getElementById('separador').style.display = "block";
+}

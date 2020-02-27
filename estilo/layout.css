@@ -101,6 +101,18 @@ p.letra {
 	display:none;
 }
 
+input {
+	border: 2px solid white;
+	border-radius: 4px;
+	background-color: #004E52;
+	height:30px;
+	width: 30%;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #BBB;
+}
+
 /*
 embed {
 	width:65%;

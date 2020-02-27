@@ -62,6 +62,18 @@ function defineHinario(hinario){
 	document.getElementById('paragrafo-hinario').innerHTML = nomeHinario;
 }
 
+/*BUSCA MUSICA POR NOME*/
+function buscaMusicaPorNome(){
+	//ocultaLetrasEHinarios();
+	
+	var texto = document.getElementById('input_busca').value;
+	alert(texto);
+	
+	
+}
+
+/*REMOVE CARACTERES ESPECIAIS NA BUSCA*/
+
 /*DICIONARIO DE HINARIOS*/
 function dicionario(hinario) {
 	

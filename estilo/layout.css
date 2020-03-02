@@ -101,21 +101,29 @@ p.letra {
 	display:none;
 }
 
+/*ESTILO DO INPUT PARA PESQUISA*/
 input {
 	border: 2px solid white;
 	border-radius: 4px;
 	background-color: #004E52;
 	height:30px;
 	width: 30%;
+	color: white;
+	padding: 8px;
+	margin-bottom: 13px;
 }
 
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+/*ESTILO DO PLACEHOLDER DO INPUT*/
+::placeholder { 
   color: #BBB;
 }
 
-/*
-embed {
-	width:65%;
-	height:100%;
-	position:relative;
-}*/
+/*ESTILO DO INPUT NO MOMENTO DO FOCO*/
+input:focus {
+  outline: none;
+}
+
+/*ESTILO DA DIV COM RESULTADO DA BUSCA*/
+.resultado_busca {
+	display: none;
+}

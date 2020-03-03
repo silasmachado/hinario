@@ -49,6 +49,12 @@ function visibilidadeElementoPorClasse(classe,visivel) {
 	}
 }
 
+/*EXIBE A DIV DE UM HINÁRIO*/
+function exibeHinario(hinario) {
+	ocultaLetrasEHinarios();
+	document.getElementById(hinario).style.display = "block";
+}
+
 /*DEFINE A LETRA QUE SERÁ EXIBIDA*/
 function defineLetra(letra){
 	//o texto do parametro 'letra' chega no formato 'letraX'
@@ -112,8 +118,9 @@ function montaResultadoBusca(elemento) {
 /*VERIFICA SE STR1 CONTEM STR2 IGNORANDO O CASE*/
 function contem(str1, str2) {
 	
-	str1 = str1.toUpperCase();
-	str2 = str2.toUpperCase();
+	//remove os caracteres especiais dos textos antes de comparar
+	str1 = removeCaracEspeciais(str1.toUpperCase());
+	str2 = removeCaracEspeciais(str2.toUpperCase());
 	
 	return (str1.includes(str2));
 }
@@ -129,4 +136,9 @@ function getValorAtributoHRef(elem) {
 		}
 	}
 	return valorElemento;
+}
+
+/*REMOVE CARACTERES ESPECIAIS DE UM TEXTO*/
+function removeCaracEspeciais(str) {
+	return str.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
 }

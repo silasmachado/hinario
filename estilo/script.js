@@ -5,6 +5,7 @@ function exibeLetra(letra) {
 	visibilidadeElementoPorClasse('separador',true);
 	visibilidadeElementoPorClasse('paragrafo-letra',true);
 	visibilidadeElementoPorClasse('resultado_busca',false);
+	document.getElementById('input_busca').value = '';
 	defineLetra(letra);
 }
 
@@ -52,6 +53,8 @@ function visibilidadeElementoPorClasse(classe,visivel) {
 /*EXIBE A DIV DE UM HINÁRIO*/
 function exibeHinario(hinario) {
 	ocultaLetrasEHinarios();
+	visibilidadeElementoPorClasse('resultado_busca',false);
+	document.getElementById('input_busca').value = '';
 	document.getElementById(hinario).style.display = "block";
 }
 
@@ -142,3 +145,14 @@ function getValorAtributoHRef(elem) {
 function removeCaracEspeciais(str) {
 	return str.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
 }
+
+/*EXIBE A CAIXA DE INFORMAÇÕES*/
+function exibeInfo(){
+	document.getElementById('info').style.display = "block";
+}
+
+/*FECHA A CAIXA DE INFORMAÇÕES*/
+function fechaInfo(){
+	document.getElementById('info').style.display = "none";
+}
+	

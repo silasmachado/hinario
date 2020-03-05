@@ -5,13 +5,60 @@
 		<script type="text/javascript" src="estilo/script.js"></script>
 	</head>
 	<body>
-
-	<h1>HIN&Aacute;RIO DIGITALIZADO</h1>
 	
+	<div id="info_icon" class="info">
+		<input type="image" id="icon" src="images/info-icon.png" title="Hist&oacute;rico de Atualiza&ccedil;&otilde;es"
+		alt="Atualiza&ccedil;&otilde;es" onclick=exibeInfo()>
+	</div>
+	
+	<div id="info" class="info">
+	
+		<h3 class="info">Hist&oacute;rico de atualiza&ccedil;&otilde;es<h3>
+		<input id="close_button" type="button" value="X" title="Fechar" onclick=fechaInfo()>
+		<br><br>
+	
+		<!-- VERSÃO 3.1.1 -->
+		<p class="info">
+			Vers&atilde;o 3.0.2 - mar&ccedil;o de 2020
+		</p>
+		<li class="info">
+			Inclus&atilde;o esta caixa de informa&ccedil;&otilde;es para que todos fiquem a par das 
+			atualiza&ccedil;&otilde;es realizadas;
+		</li>
+		<li class="info">
+			Ajuste feito para que, quando algum hin&aacute;rio seja selecionado, a lista com o 
+			resultado da pesquisa seja oculta.
+		</li>
+		
+		<!-- VERSÃO 3.1.0 -->
+		<p class="info">
+			Vers&atilde;o 3.1.0 - mar&ccedil;o de 2020
+		</p>
+		<li class="info">
+			Inclus&atilde;o do campo de pesquisa pelo nome da m&uacute;sica;
+		</li>
+		<li class="info">
+			Ajuste feito para que, quando seja selecionada uma letra no menu lateral, os nomes dos 
+			hin&aacute;rios exibidos sejam clic&aacute;veis.
+		</li>
+		
+		<!-- VERSÃO 3.0.2 -->
+		<p class="info">
+			Vers&atilde;o 3.0.2 - fevereiro de 2020
+		</p>
+		
+		<li class="info">
+			Pequenas corre&ccedil;&otilde;es.
+		</li>
+							
+	</div>
+		
+	<h1>HIN&Aacute;RIO DIGITALIZADO</h1>
+		
 	<div id="busca">
 		<label>BUSCA</label>
 		&nbsp;
-		<input id="input_busca" type="text" placeholder="Digite o nome da m&uacute;sica"
+		<input id="input_busca" type="search" placeholder="Digite o nome da m&uacute;sica"
 		maxlength="60" autofocus onkeyup=buscaMusicaPorNome() ></input>
 	</div>
 
@@ -3755,7 +3802,7 @@
 
 	<footer class="rodape">
 		<p>Banco de C&acirc;nticos Digitalizados do Reino</p>
-		<p>Ves&atilde;o  3.1.0 - mar&ccedil;o de 2020</p>
+		<p>Ves&atilde;o  3.1.1 - mar&ccedil;o de 2020</p>
 		<a target="_blank" href="http://www.reinonet.com.br">www.reinonet.com.br</a>
 	</footer>	
 	</body>
